@@ -1,0 +1,140 @@
+.future-wrepper{
+    padding: 106px 0px;
+    @media (max-width:768px) {
+        padding: 50px 0px;
+        margin-bottom: 50px;
+    }
+    .future-item{
+        @media (max-width:768px) {
+            padding: 25px 0px;
+        }
+        z-index: 1;
+        position: relative;
+        .icon{
+            margin-bottom: 30px;
+            @include  transition(0.4s);
+        }
+        .content{
+            h4{
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                font-family: $body-font;
+                color: $white;
+                margin-bottom: 15px;
+            }
+            p{
+                max-width: 315px;
+                height: auto;
+                margin: 0 auto;
+                font-weight: 450;
+                font-size: 15px;
+                line-height: 26px;
+                font-family: $body-font;
+                color: $white;
+
+            }
+        }
+        .vector{
+            position: absolute;
+            top: -4%;
+            left: 40%;
+            z-index: -1;
+            @media (max-width:768px) {
+                top: 8%;
+            }
+        }
+    &:hover{
+        .icon{
+            animation: shake 0.5s linear 1;
+        }
+    }
+    }
+}
+
+.core-futures{
+    
+    padding: 100px 0px;
+    @media (max-width:768px) {
+        padding-bottom: 50px;
+        padding-top: 0px;
+    }
+    .section-title{
+        padding-bottom: 20px;
+        position: relative;
+        padding-top: 30px;
+        max-width: 594px;
+        margin: 0 auto;
+        h2{
+            @include section_h2;
+            @media (max-width:768px) {
+                line-height: 30px;
+            }
+        }
+        @media (max-width:768px) {
+            padding-bottom: 0px;
+            padding-top:0px;
+        }
+    }
+    .shape-h{
+        position: absolute;
+        top: -17%;
+        left: 0%;
+        h1{
+            font-weight: 900;
+            font-size: 128px;
+            line-height: 162px;
+            -webkit-text-stroke: 1px rgba(255, 94, 20, 0.1);
+            color: transparent;
+            text-transform: uppercase;
+            text-align: center;
+            @media (max-width:768px) {
+                font-weight: 100;
+                font-size: 70px;
+             }
+        }
+       
+    }
+    .core-item{
+        margin-top: 20px;
+        border-radius: 5px;
+        max-height: 280px;
+        .icon{
+            @include transition(0.4s);
+            padding-top: 50px;
+            img{
+                height: 75px;
+                margin: auto;
+            }
+        }
+        .content{
+            h5{
+                font-family: 'Circular Std';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 22px;
+                text-align: center;
+                color: #211E3B;
+                padding-bottom: 10px;
+            }
+            p{
+                max-width: 250px;
+                margin: 0% auto;
+                font-family: 'Circular Std';
+                font-weight: 450;
+                font-size: 15px;
+                line-height: 28px;
+                color: #696969;
+            }
+            padding-top: 25px;
+           padding-bottom: 80px;
+        }
+        &:hover{
+            .icon{
+                animation: shake 0.5s linear 1;
+            }
+        }
+    }
+
+}

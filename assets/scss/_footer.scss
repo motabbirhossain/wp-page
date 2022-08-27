@@ -1,0 +1,102 @@
+.footer-wrep{
+    background-color: $footer;
+    position: relative;
+    overflow: hidden;
+    .footer-widgete{
+        z-index: 1;
+        position: relative;
+        padding: 145px 0px;
+        @media (max-width:768px) {
+            padding: 50px 0px;
+        }
+        .content{
+            position: relative;
+            .icon{
+                margin-bottom: 20px;
+            }
+            .footer-text{
+                max-width:1086px;
+                margin: 0 auto;
+                h1{
+                    font-family: $body-font;
+                    font-weight: 700;
+                    font-size: 60px;
+                    line-height: 80px;
+                    text-transform: uppercase;
+                    color: $white;
+                    padding-bottom: 20px;
+                    @media (max-width:768px) {
+                        font-size: 30px;
+                        line-height: 35px;
+                    }
+                }
+                p{
+                    font-family: $body-font;
+                    font-weight: 450;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $white;
+
+                }
+            }
+            .fotter-btns{
+                .theme-btn{
+                    position: relative;
+                    background-color:$theme-color-2;
+                    &::before{
+                        content: "";
+                        clear: both;
+                        bottom: 0%;
+                        left: 0%;
+                        position: absolute;
+                        background: #FF5E14;
+                        filter: blur(10px);
+                        width: 100%;
+                        height: 4px;
+                        opacity:1;
+                        z-index: -1;
+                        @include transition(0.4s);
+                    }
+                    &:hover{
+                        &::before{
+                            opacity:0;
+                        }
+                    }
+                }
+                margin-top: 50px;
+                @media (max-width:768px) {
+                    margin-top: 30px;
+                }
+            }
+            
+        }
+        .section-shap_1{
+            position: absolute;
+            top: 60%;
+            right: 10%;
+            z-index: -1;
+            width: 160px;
+            height: 160px;
+            background: #FF5E14;
+            filter: blur(150px);
+            @media (max-width:768px) {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .section-shap_2{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            width: 351px;
+            height: 351px;
+            background: #FF5E14;
+            filter: blur(300px);
+            @media (max-width:768px) {
+                width: 50px;
+                height:51px;
+            }
+        }
+    }
+}
